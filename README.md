@@ -4,7 +4,7 @@ This Solution contains a series of examples on how to use certain functionalitie
 
 # List of the demonstraded DotNet functionality
 
-## First Session
+## 1th Session
 
 * Properties
 * Switch-case
@@ -15,3 +15,18 @@ This Solution contains a series of examples on how to use certain functionalitie
 * HashSet
 * Dictionary
 * XDocument (export XML)
+
+## 2nd Session
+
+* Is + var
+* Interfaces
+* Linq
+  * Where
+  * Order
+  * Select
+  * ToList
+  * ToDictionary
+  * FirstOrDefault
+  * Any
+  * All
+ 

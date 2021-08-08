@@ -68,6 +68,14 @@
     <Compile Include="1.09-XDocument-Export\XDocumentExportExamples.prg">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="2.01-IsAndVar\IsAndVarExamples.prg">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="2.02-Interfaces\Classes.prg">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="2.02-Interfaces\Interfaces.prg" />
+    <Compile Include="2.02-Interfaces\InterfacesExamples.prg" />
     <Compile Include="Properties\AssemblyInfo.prg">
       <SubType>Code</SubType>
     </Compile>
@@ -85,6 +93,8 @@
     <Folder Include="1.07-HashSet" />
     <Folder Include="1.08-Dictionary" />
     <Folder Include="1.09-XDocument-Export" />
+    <Folder Include="2.01-IsAndVar" />
+    <Folder Include="2.02-Interfaces" />
     <Folder Include="Properties\" />
   </ItemGroup>
   <ItemGroup>
