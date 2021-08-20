@@ -13,7 +13,7 @@ class LinqSimpleExamples
 		Console:WriteLine("Linq with Simple Datatypes")
 		Console:WriteLine("")
 	
-		self:DereferedExecution()
+		self:DeferredExecution()
 		self:Filter()
 		self:Sort()
 		self:Select()
@@ -22,9 +22,11 @@ class LinqSimpleExamples
 		self:FirstLast()
 		return
 
-	method DereferedExecution() as void strict
+	method DeferredExecution() as void strict
+		console:WriteLine("DeferredExecution")
 		
 		local function MyFilterFunction(value as int) as logic
+			Console.WriteLine(i"Filter {value}")
 			return value > 2
 		end function
 
@@ -49,6 +51,8 @@ class LinqSimpleExamples
 
 
 	method Filter() as void strict
+		console:WriteLine("Filter")
+
 		var list := List<int>{} { 1, 2, 3, 4, 5}
 		var result := list:Where({q => q < 4})
 		
@@ -57,6 +61,8 @@ class LinqSimpleExamples
 
 
 	method Sort() as void strict
+		console:WriteLine("Sort")
+
 		var list := List<int>{} { 3, 4, 5, 1, 2}
 		var result := list:OrderBy({q => q})
 		
@@ -70,6 +76,8 @@ class LinqSimpleExamples
 
 
 	method Select() as void strict
+		console:WriteLine("Select")
+
 		var list := List<int>{} { 1, 2, 3, 4}
 		var result := list:Select({q => String.Format("Person {0}", q)})
 		
@@ -78,6 +86,8 @@ class LinqSimpleExamples
 		return
 
 	method To() as void strict
+		console:WriteLine("To...")
+
 		var result := List<int>{} { 2, 1, 3 }:OrderBy({q => q})
 		var resultTwoValues := result:Select({q => class{ number := q, square := q * q }})
 		
@@ -96,6 +106,8 @@ class LinqSimpleExamples
 
 
 	method AllAndAny() as void strict
+		console:WriteLine("All/Any")
+		
 		var data := List<int>{} { 1, 2, 3, 4, 5 }
 
 		var anyNumberLowerThen3 := data:Any({q => q < 3})
@@ -104,9 +116,12 @@ class LinqSimpleExamples
 		var allNumbersLowerThen3 := data:All({q => q < 3})
 		Console.WriteLine(i"All numbers lower then 3: {allNumbersLowerThen3}")
 
+		Console.WriteLine()
 		return
 
 	method FirstLast() as void strict
+		console:WriteLine("First/Last")
+
 		var data := List<int>{} { 1, 2, 3, 4, 5 }
 
 		// Throws an exception, if Data is empty
@@ -121,6 +136,8 @@ class LinqSimpleExamples
 		Console.WriteLine(data:LastOrDefault({q => q < 3})) // = 2
 
 		Console.WriteLine(data:FirstOrDefault({q => q > 10})) // = 0
+
+		Console.WriteLine()
 		return
 
 
@@ -129,6 +146,8 @@ class LinqSimpleExamples
 		foreach var item in collection
 			Console.WriteLine(item)
 		next
+		Console.WriteLine()
+		return
 
 
 end class

@@ -21,12 +21,20 @@ This Solution contains a series of examples on how to use certain functionalitie
 * Is + var
 * Interfaces
 * Linq
+  * Deferred execution
   * Where
-  * Order
+  * OrderBy
+  * ThenBy
   * Select
+  * SelectMany
   * ToList
+  * ToArray
   * ToDictionary
+  * ToHashset
+  * First
   * FirstOrDefault
+  * Last
+  * LastOrDefault
   * Any
   * All
  
