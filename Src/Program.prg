@@ -32,8 +32,9 @@ FUNCTION Start() AS VOID STRICT
 	#region Examples of 2nd Workshop
 
 	// IsAndVarExamples{}:Execute()
-	interfaceExamples{}:Execute()
-
+	// interfaceExamples{}:Execute()
+	LinqSimpleExamples{}:Execute()
+	
 	#endregion
 	
 	console:WriteLine("Press key to exit")

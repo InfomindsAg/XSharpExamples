@@ -76,6 +76,7 @@
     </Compile>
     <Compile Include="2.02-Interfaces\Interfaces.prg" />
     <Compile Include="2.02-Interfaces\InterfacesExamples.prg" />
+    <Compile Include="2.03-Linq-Simple\LinqSimpleExamples.prg" />
     <Compile Include="Properties\AssemblyInfo.prg">
       <SubType>Code</SubType>
     </Compile>
@@ -95,6 +96,7 @@
     <Folder Include="1.09-XDocument-Export" />
     <Folder Include="2.01-IsAndVar" />
     <Folder Include="2.02-Interfaces" />
+    <Folder Include="2.03-Linq-Simple" />
     <Folder Include="Properties\" />
   </ItemGroup>
   <ItemGroup>

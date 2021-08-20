@@ -68,4 +68,3 @@ class InterfaceExamples
 		return 
 
 end class
-	
