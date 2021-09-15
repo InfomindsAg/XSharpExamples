@@ -38,3 +38,6 @@ This Solution contains a series of examples on how to use certain functionalitie
   * Any
   * All
  
+ ## 3rd Session
+
+* XDocument (Linq to XML)
