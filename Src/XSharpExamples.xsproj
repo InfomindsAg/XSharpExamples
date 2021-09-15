@@ -79,6 +79,7 @@
     <Compile Include="2.03-Linq-Simple\LinqSimpleExamples.prg" />
     <Compile Include="2.04-Linq-Objects\Classes.prg" />
     <Compile Include="2.04-Linq-Objects\LinqObjectsExamples.prg" />
+    <Compile Include="3.01-XDocument\XDocumentExamples.prg" />
     <Compile Include="Properties\AssemblyInfo.prg">
       <SubType>Code</SubType>
     </Compile>
@@ -100,6 +101,7 @@
     <Folder Include="2.02-Interfaces" />
     <Folder Include="2.03-Linq-Simple" />
     <Folder Include="2.04-Linq-Objects" />
+    <Folder Include="3.01-XDocument" />
     <Folder Include="Properties\" />
   </ItemGroup>
   <ItemGroup>
