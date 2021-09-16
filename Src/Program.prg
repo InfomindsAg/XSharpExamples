@@ -36,6 +36,12 @@ FUNCTION Start() AS VOID STRICT
 	// LinqSimpleExamples{}:Execute()
 	// LinqObjectsExamples{}:Execute()
 	#endregion
+    
+    #region Examples of 3rd Workshop
+    
+    // XDocumentExamples{}:Execute()
+    
+    #endregion
 	
 	console:WriteLine("Press key to exit")
 	console:ReadKey()
