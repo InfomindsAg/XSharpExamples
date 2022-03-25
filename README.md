@@ -40,6 +40,13 @@ Some of the examples use features from the X# version 2.8 (like local methods an
   * Any
   * All
  
- ## 3rd Session
+## 3rd Session
 
 * XDocument (Linq to XML)
+
+
+## 5rd Session
+
+* Use the Test-Explorer (in the Test Menu) to run the tests 
+* Simple Unit Tests (FizzBuzz)
+* Ways to handle Dependencies (using Paramter or Provider)

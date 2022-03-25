@@ -13,7 +13,7 @@
     <GenerateFullPaths>true</GenerateFullPaths>
     <Dialect>VO</Dialect>
     <OutputName>XSharpExamples</OutputName>
-    <XSharpProjectversion>2.10.0.3</XSharpProjectversion>
+    <XSharpProjectversion>2.11.0.1</XSharpProjectversion>
     <StartupObject />
     <EnforceSelf>True</EnforceSelf>
     <Unsafe>True</Unsafe>
@@ -93,6 +93,10 @@
     <Compile Include="2.04-Linq-Objects\LinqObjectsExamples.prg" />
     <Compile Include="3.01-XDocument\XDocumentExamples.prg" />
     <Compile Include="4.01-StringFunctions\StringFunctionExamples.prg" />
+    <Compile Include="5.01-ExamplesUnitTests\NextXMasParameters.prg" />
+    <Compile Include="5.01-ExamplesUnitTests\NextXMasWithProvider.prg" />
+    <Compile Include="5.01-ExamplesUnitTests\NextXMasBadExample.prg" />
+    <Compile Include="5.01-ExamplesUnitTests\FizzBuzz.prg" />
     <Compile Include="Properties\AssemblyInfo.prg">
       <SubType>Code</SubType>
     </Compile>
@@ -116,6 +120,7 @@
     <Folder Include="2.04-Linq-Objects" />
     <Folder Include="3.01-XDocument" />
     <Folder Include="4.01-StringFunctions" />
+    <Folder Include="5.01-ExamplesUnitTests" />
     <Folder Include="Properties\" />
   </ItemGroup>
   <ItemGroup>
