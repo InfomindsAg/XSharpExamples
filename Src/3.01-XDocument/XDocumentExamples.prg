@@ -8,10 +8,10 @@ Documentation:
 using System.Xml.Linq // needs references to System.XML and System.Xml.Linq in Project
 using System.Linq
 
+#pragma warnings (XS0219, off)
 class XDocumentExamples
 
 	method Execute() as void strict
-        
         #region XML
     
         /*
@@ -84,6 +84,7 @@ class XDocumentExamples
     
         var attribute := contatto:Attribute("TestAttribute") //XAttribute
     
+    
         #endregion
     
         #region Working with xmlns Namespaces
@@ -119,3 +120,4 @@ class XDocumentExamples
         return
 
 end class
+#pragma warnings (XS0219, default)
