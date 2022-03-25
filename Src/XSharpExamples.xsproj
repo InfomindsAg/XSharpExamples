@@ -13,9 +13,21 @@
     <GenerateFullPaths>true</GenerateFullPaths>
     <Dialect>VO</Dialect>
     <OutputName>XSharpExamples</OutputName>
-    <XSharpProjectversion>2.8.3.15</XSharpProjectversion>
+    <XSharpProjectversion>2.10.0.3</XSharpProjectversion>
     <StartupObject />
     <EnforceSelf>True</EnforceSelf>
+    <Unsafe>True</Unsafe>
+    <OVF>True</OVF>
+    <Allowdot>True</Allowdot>
+    <INS>True</INS>
+    <Vo3>True</Vo3>
+    <Vo10>True</Vo10>
+    <Vo8>True</Vo8>
+    <Vo2>True</Vo2>
+    <Vo13>True</Vo13>
+    <Vo7>True</Vo7>
+    <Vo6>True</Vo6>
+    <Vo14>True</Vo14>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'" Label="Configuration">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -80,6 +92,7 @@
     <Compile Include="2.04-Linq-Objects\Classes.prg" />
     <Compile Include="2.04-Linq-Objects\LinqObjectsExamples.prg" />
     <Compile Include="3.01-XDocument\XDocumentExamples.prg" />
+    <Compile Include="4.01-StringFunctions\StringFunctionExamples.prg" />
     <Compile Include="Properties\AssemblyInfo.prg">
       <SubType>Code</SubType>
     </Compile>
@@ -102,6 +115,7 @@
     <Folder Include="2.03-Linq-Simple" />
     <Folder Include="2.04-Linq-Objects" />
     <Folder Include="3.01-XDocument" />
+    <Folder Include="4.01-StringFunctions" />
     <Folder Include="Properties\" />
   </ItemGroup>
   <ItemGroup>
