@@ -12,7 +12,7 @@ FUNCTION Start() AS VOID STRICT
 
 	// SwitchExamples{}:Execute()
 
-	// EmumExamples{}:Execute()
+	// EnumExamples{}:Execute()
 	
 	// StringBuilderExamples{}:Execute()
 

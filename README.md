@@ -1,6 +1,8 @@
 # Introduction
 
-This Solution contains a series of examples on how to use certain functionalities of DotNet in XSharp. 
+This solution contains a series of examples on how to use certain functionalities of DotNet in XSharp. 
+
+Some of the examples use features from the X# version 2.8 (like local methods and expression bodies)
 
 # List of the demonstraded DotNet functionality
 

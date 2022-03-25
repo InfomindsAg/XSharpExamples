@@ -71,7 +71,7 @@
     <Compile Include="1.02-SwitchCase\SwitchExamples.prg">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="1.03-Emums\EmumExamples.prg" />
+    <Compile Include="1.03-Enums\EnumExamples.prg" />
     <Compile Include="1.06-List\ListObjectsExamples.prg" />
     <Compile Include="1.06-List\ListSimpleExamples.prg" />
     <Compile Include="1.05-GenericClasses\GenericClassesExamples.prg">
@@ -103,7 +103,7 @@
   <ItemGroup>
     <Folder Include="1.06-List" />
     <Folder Include="1.04-StringBuilder" />
-    <Folder Include="1.03-Emums" />
+    <Folder Include="1.03-Enums" />
     <Folder Include="1.01-Propery" />
     <Folder Include="1.02-SwitchCase" />
     <Folder Include="1.05-GenericClasses" />

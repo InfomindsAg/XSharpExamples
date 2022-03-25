@@ -25,13 +25,18 @@ class LinqObjectsExamples
 
 		var result := list; 
 						:Where({q => q:Number < 3});  // get only the first two invoices
-						:Select({q => class{ Invoice := q, SumValue := q:Positions?:Sum({p => p:Quantity * p:Price }) }});  // project to a new, anonymous class, that contains the original item and the sum of all positions
+						:Select({q => class{ ;
+							q:Year, ;
+							q:Number, ;
+							SumValue := q:Positions?:Sum({p => p:Quantity * p:Price }),;   // project to a new, anonymous class, that contains the original item and the sum of all positions
+							PosText := string.Join(" + ", q:Positions?:Select({p => i"{p:Quantity*p:Price}"})) }});
 						:ToList()  // convert to list
-						
+			
+			
+			
 		// q:Positions?: => execute sum only, is Positions is not null. Otherwise return null
 		foreach var item in result
-			var posText := string.Join(" + ", item:Invoice:Positions:Select({q => i"{q:Quantity*q:Price}"}))
-			console:WriteLine(i"{item:Invoice:Year}/{item:Invoice:Number} => {item:SumValue}  ({posText})")
+			console:WriteLine(i"{item:Year}/{item:Number} => {item:SumValue}  ({item:PosText})")
 		next
 
 		console:WriteLine()
