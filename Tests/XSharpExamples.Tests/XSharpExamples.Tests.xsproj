@@ -2,20 +2,36 @@
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(XSharpMsBuildDir)\XSharp.Default.props" />
   <PropertyGroup>
-    <ProjectGuid>94db2986-6881-4f5e-abdd-af04c4584dbb</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <ProjectGuid>10fd8224-ec75-4be5-a1f9-a8c669de96cc</ProjectGuid>
+    <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>XSharpExamples</RootNamespace>
-    <AssemblyName>XSharpExamples</AssemblyName>
+    <RootNamespace>XSharpExamples.Tests</RootNamespace>
+    <AssemblyName>XSharpExamples.Tests</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
-    <Name>XSharpExamples</Name>
+    <Name>XSharpExamples.Tests</Name>
     <Nologo>true</Nologo>
     <GenerateFullPaths>true</GenerateFullPaths>
     <Dialect>VO</Dialect>
-    <OutputName>XSharpExamples</OutputName>
+    <na>false</na>
+    <az>false</az>
+    <nostddef>false</nostddef>
+    <ins>true</ins>
+    <unsafe>true</unsafe>
+    <vo2>true</vo2>
+    <vo3>true</vo3>
+    <vo4>true</vo4>
+    <vo6>true</vo6>
+    <vo7>true</vo7>
+    <vo9>true</vo9>
+    <vo10>true</vo10>
+    <vo13>true</vo13>
+    <vo14>true</vo14>
+    <vo15>true</vo15>
+    <vo16>true</vo16>
+    <lb>false</lb>
+    <OutputName>XSharpExamples.Tests</OutputName>
     <XSharpProjectversion>2.11.0.1</XSharpProjectversion>
     <StartupObject />
-    <EnforceSelf>True</EnforceSelf>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'" Label="Configuration">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -47,70 +63,41 @@
     <Reference Include="System.Xml" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="XSharp.Core" />
-    <Reference Include="XSharp.RT" />
+    <Reference Include="XSharp.Rt" />
     <Reference Include="XSharp.VO" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="1.07-HashSet\HashSetExamples.prg" />
-    <Compile Include="1.08-Dictionary\DictionaryExamples.prg" />
-    <Compile Include="1.01-Propery\PropertiesExamples.prg">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="1.02-SwitchCase\SwitchExamples.prg">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="1.03-Emums\EmumExamples.prg" />
-    <Compile Include="1.06-List\ListObjectsExamples.prg" />
-    <Compile Include="1.06-List\ListSimpleExamples.prg" />
-    <Compile Include="1.05-GenericClasses\GenericClassesExamples.prg">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="1.09-XDocument-Export\XDocumentExportExamples.prg">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="2.01-IsAndVar\IsAndVarExamples.prg">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="2.02-Interfaces\Classes.prg">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="2.02-Interfaces\Interfaces.prg" />
-    <Compile Include="2.02-Interfaces\InterfacesExamples.prg" />
-    <Compile Include="2.03-Linq-Simple\LinqSimpleExamples.prg" />
-    <Compile Include="2.04-Linq-Objects\Classes.prg" />
-    <Compile Include="2.04-Linq-Objects\LinqObjectsExamples.prg" />
-    <Compile Include="3.01-XDocument\XDocumentExamples.prg" />
-    <Compile Include="5.01-ExamplesUnitTests\NextXMasParameters.prg" />
-    <Compile Include="5.01-ExamplesUnitTests\NextXMasWithProvider.prg" />
-    <Compile Include="5.01-ExamplesUnitTests\NextXMasBadExample.prg" />
-    <Compile Include="5.01-ExamplesUnitTests\FizzBuzz.prg" />
+    <Compile Include="NextXMasWithProviderTests.prg" />
+    <Compile Include="NextXMasParametersTests.prg" />
     <Compile Include="Properties\AssemblyInfo.prg">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Program.prg">
+    <Compile Include="FizzBuzzTests.prg">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="1.06-List" />
-    <Folder Include="1.04-StringBuilder" />
-    <Folder Include="1.03-Emums" />
-    <Folder Include="1.01-Propery" />
-    <Folder Include="1.02-SwitchCase" />
-    <Folder Include="1.05-GenericClasses" />
-    <Folder Include="1.07-HashSet" />
-    <Folder Include="1.08-Dictionary" />
-    <Folder Include="1.09-XDocument-Export" />
-    <Folder Include="2.01-IsAndVar" />
-    <Folder Include="2.02-Interfaces" />
-    <Folder Include="2.03-Linq-Simple" />
-    <Folder Include="2.04-Linq-Objects" />
-    <Folder Include="3.01-XDocument" />
-    <Folder Include="5.01-ExamplesUnitTests" />
     <Folder Include="Properties\" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="1.04-StringBuilder\StringBuilderExamples.prg" />
+    <PackageReference Include="FluentAssertions">
+      <Version>6.5.1</Version>
+    </PackageReference>
+    <PackageReference Include="xunit">
+      <Version>2.4.1</Version>
+    </PackageReference>
+    <PackageReference Include="xunit.runner.visualstudio">
+      <Version>2.4.3</Version>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Src\XSharpExamples.xsproj">
+      <Name>XSharpExamples</Name>
+      <Project>{94db2986-6881-4f5e-abdd-af04c4584dbb}</Project>
+      <Private>True</Private>
+    </ProjectReference>
   </ItemGroup>
   <!-- This next bit is required unless the macro used to Import your targets is defined in an MSBuild toolset. -->
   <ProjectExtensions>
