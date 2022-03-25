@@ -38,6 +38,13 @@ This Solution contains a series of examples on how to use certain functionalitie
   * Any
   * All
  
- ## 3rd Session
+## 3rd Session
 
 * XDocument (Linq to XML)
+
+
+## 5rd Session
+
+* Use the Test-Explorer (in the Test Menu) to run the tests 
+* Simple Unit Tests (FizzBuzz)
+* Ways to handle Dependencies (using Paramter or Provider)
