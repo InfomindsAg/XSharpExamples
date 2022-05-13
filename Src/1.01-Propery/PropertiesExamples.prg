@@ -8,7 +8,7 @@ class PropertiesExamples
 	
 	#region This was the old way to define properties
 	
-	protect _oldProperty as int
+	private _oldProperty as int
 	access OldProperty as int
 		return _oldProperty
 	end access
@@ -25,7 +25,7 @@ class PropertiesExamples
 	
 	#region This is the new way to define properties
 	
-	protect _newProperty as int
+	private _newProperty as int
 	property NewProperty as int
 		get
 			return _newProperty
@@ -43,7 +43,7 @@ class PropertiesExamples
 
 	#region An alternative new way for properties with one-line access  and assign
 	
-	protect _newPropertyOneLine as int 
+	private _newPropertyOneLine as int 
 	property NewPropertyOneLine as int 
 		get => _newPropertyOneLine 		
 		set => _newPropertyOneLine := value 
@@ -53,7 +53,7 @@ class PropertiesExamples
 
 	#region And an even shorter way for properties with one-line access and assign
 	
-	protect _newPropertyOneLineShort as int 
+	private _newPropertyOneLineShort as int 
 	property NewPropertyOneLineShort as int get _newPropertyOneLineShort set _newPropertyOneLineShort := value 
 	
 	#endregion

@@ -16,6 +16,18 @@
     <XSharpProjectversion>2.11.0.1</XSharpProjectversion>
     <StartupObject />
     <EnforceSelf>True</EnforceSelf>
+    <Unsafe>True</Unsafe>
+    <OVF>True</OVF>
+    <Allowdot>True</Allowdot>
+    <INS>True</INS>
+    <Vo3>True</Vo3>
+    <Vo10>True</Vo10>
+    <Vo8>True</Vo8>
+    <Vo2>True</Vo2>
+    <Vo13>True</Vo13>
+    <Vo7>True</Vo7>
+    <Vo6>True</Vo6>
+    <Vo14>True</Vo14>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'" Label="Configuration">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -59,7 +71,7 @@
     <Compile Include="1.02-SwitchCase\SwitchExamples.prg">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="1.03-Emums\EmumExamples.prg" />
+    <Compile Include="1.03-Enums\EnumExamples.prg" />
     <Compile Include="1.06-List\ListObjectsExamples.prg" />
     <Compile Include="1.06-List\ListSimpleExamples.prg" />
     <Compile Include="1.05-GenericClasses\GenericClassesExamples.prg">
@@ -80,6 +92,8 @@
     <Compile Include="2.04-Linq-Objects\Classes.prg" />
     <Compile Include="2.04-Linq-Objects\LinqObjectsExamples.prg" />
     <Compile Include="3.01-XDocument\XDocumentExamples.prg" />
+    <Compile Include="4.01-StringFunctions\StringFunctionExamples.prg" />
+    <Compile Include="4.02-ActionAndFunc\StringFunctionExamples.prg" />
     <Compile Include="5.01-ExamplesUnitTests\NextXMasParameters.prg" />
     <Compile Include="5.01-ExamplesUnitTests\NextXMasWithProvider.prg" />
     <Compile Include="5.01-ExamplesUnitTests\NextXMasBadExample.prg" />
@@ -94,7 +108,7 @@
   <ItemGroup>
     <Folder Include="1.06-List" />
     <Folder Include="1.04-StringBuilder" />
-    <Folder Include="1.03-Emums" />
+    <Folder Include="1.03-Enums" />
     <Folder Include="1.01-Propery" />
     <Folder Include="1.02-SwitchCase" />
     <Folder Include="1.05-GenericClasses" />
@@ -106,6 +120,8 @@
     <Folder Include="2.03-Linq-Simple" />
     <Folder Include="2.04-Linq-Objects" />
     <Folder Include="3.01-XDocument" />
+    <Folder Include="4.01-StringFunctions" />
+    <Folder Include="4.02-ActionAndFunc" />
     <Folder Include="5.01-ExamplesUnitTests" />
     <Folder Include="Properties\" />
   </ItemGroup>

@@ -6,7 +6,7 @@ Documentation:
 - https://www.xsharp.eu/help/command_enum.html
 */
 
-class EmumExamples
+class EnumExamples
 
 	enum Answer 
 		Yes := 1

@@ -12,7 +12,7 @@ FUNCTION Start() AS VOID STRICT
 
 	// SwitchExamples{}:Execute()
 
-	// EmumExamples{}:Execute()
+	// EnumExamples{}:Execute()
 	
 	// StringBuilderExamples{}:Execute()
 
@@ -42,7 +42,15 @@ FUNCTION Start() AS VOID STRICT
     // XDocumentExamples{}:Execute()
     
     #endregion
-	
+
+    #region Examples for Blog Posts (4rd block)
+    
+    // StringFunctionExamples{}:Execute()
+    // ActionAndFuncExamples{}:Execute()
+    
+    #endregion
+
+
 	console:WriteLine("Press key to exit")
 	console:ReadKey()
 	return
