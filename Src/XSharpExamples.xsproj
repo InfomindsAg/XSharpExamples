@@ -93,7 +93,7 @@
     <Compile Include="2.04-Linq-Objects\LinqObjectsExamples.prg" />
     <Compile Include="3.01-XDocument\XDocumentExamples.prg" />
     <Compile Include="4.01-StringFunctions\StringFunctionExamples.prg" />
-    <Compile Include="4.02-ActionAndFunc\StringFunctionExamples.prg" />
+    <Compile Include="4.02-ActionAndFunc\ActionAndFuncExamples.prg" />
     <Compile Include="5.01-ExamplesUnitTests\NextXMasParameters.prg" />
     <Compile Include="5.01-ExamplesUnitTests\NextXMasWithProvider.prg" />
     <Compile Include="5.01-ExamplesUnitTests\NextXMasBadExample.prg" />
