@@ -47,6 +47,7 @@ Some of the examples use features from the X# version 2.8 (like local methods an
 ## 4th Session (Blog Posts)
 
 * String functions
+* Action and Func types
 
 ## 5rd Session
 

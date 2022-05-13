@@ -45,7 +45,8 @@ FUNCTION Start() AS VOID STRICT
 
     #region Examples for Blog Posts (4rd block)
     
-    StringFunctionExamples{}:Execute()
+    // StringFunctionExamples{}:Execute()
+    // ActionAndFuncExamples{}:Execute()
     
     #endregion
 
