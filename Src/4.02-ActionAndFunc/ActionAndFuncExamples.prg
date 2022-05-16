@@ -3,54 +3,69 @@
 class ActionAndFuncExamples
 
 	method Execute() as void strict
-        self:ExecuteAction()
+
+        self:ExecuteActionWithMethod()
+        self:ExecuteActionWithLamda()
 
         self:ExecuteFunction()
-      
 
         return
 
-    private method ExecuteAction() as void strict
+    private method MessageMethodForAction(msg as string) as void strict
+        // This method will be assigned to an action
+        Console.WriteLine("From Method:" + msg)
+        return
+
+    private method MethodWithActionAsParameter(action as Action<string>, msg as string) as void
+        // This method get's an action as parameter and executes the action
+        action?:Invoke(msg)
+        return
+
+    private method ExecuteActionWithMethod() as void strict
+        // Declare an Action with one parameter string and assign null
+        local messageAction := null as Action<string>;
+        
+        // Execute the Action with null check -> Does nothing, because messageAction is null
+        messageAction?:Invoke("Message Action 1")
+        
+        // assign a method and execute it
+        messageAction := MessageMethodForAction
+        messageAction?:Invoke("Message Action 2.1")
+
+        // Invoke without null check (throws an exception, if messageAction is null)
+        messageAction("Message Action 2.2")
+
+        // Pass the action variable to a method
+        self:MethodWithActionAsParameter(messageAction, "Message 3")
+
+        // clear the messageAction
+        messageAction := null
+        messageAction?:Invoke("Message 4")
+        return
+
+    private method ExecuteActionWithLamda() as void strict
         // Declare an Action with one parameter string
         local messageAction := null as Action<string>;
         
         // Execute the Action with null check -> Does nothing, because messageAction is null
-        messageAction?:Invoke("Message 1")
+        messageAction?:Invoke("Message Lambda 1")
         
         // assign a simple lambda expression and execute it
         messageAction := { m => Console.WriteLine("From Lambda:" + m) }
         
         // Invoke with null check
-        messageAction?:Invoke("Message 2.1")
+        messageAction?:Invoke("Message Lambda 2.1")
 
         // Invoke without null check (throws an exception, if messageAction is null)
-        messageAction("Message 2.2")
-
-
-        // assign a simple lambda expression and execute it
-        messageAction := MessageMethodForAction
-        messageAction?:Invoke("Message 3")
-
-        // Pass the action variable to a method
-        self:MethodWithActionParameter(messageAction, "Message 4")
-
+        messageAction("Message Lambda 2.2")
+        
         // Pass the action as lambda to a method 
-        self:MethodWithActionParameter({ m => Console.WriteLine("From Lambda as param:" + m) }, "Message 5")
+        self:MethodWithActionAsParameter(messageAction, "Message 3")
 
         // clear the messageAction
         messageAction := null
-        messageAction?:Invoke("Message 6")
-
+        messageAction?:Invoke("Message 4")
         return
-    
-    private method MessageMethodForAction(msg as string) as void strict
-        Console.WriteLine("From Method:" + msg)
-        return
-
-    private method MethodWithActionParameter(action as Action<string>, msg as string) as void
-        action?:Invoke(msg)
-        return
-
 
 
     private method ExecuteFunction() as void strict
