@@ -51,6 +51,12 @@ Some of the examples use features from the X# version 2.8 (like local methods an
 
 ## 5rd Session
 
+### Part 1 - UnitTests
+
 * Use the Test-Explorer (in the Test Menu) to run the tests 
 * Simple Unit Tests (FizzBuzz)
 * Ways to handle Dependencies (using Paramter or Provider)
+
+### Part 2 - Benchmarks
+
+* Use BenchmarkDotNet to perform Performance and Memory Benchmarks
