@@ -50,6 +50,12 @@ FUNCTION Start() AS VOID STRICT
     
     #endregion
 
+    #region Examples for Benchmarks (5rd block)
+
+	// ExampleForBenchmark{}.OutputStart()
+	// ExampleForBenchmark{}.OutputFinal()
+
+    #endregion
 
 	console:WriteLine("Press key to exit")
 	console:ReadKey()
