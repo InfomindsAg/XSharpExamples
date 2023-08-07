@@ -11,8 +11,8 @@ using system.collections.generic
 class HashSetExamples
 
 	method Execute() as void strict
-		Console:WriteLine("HashSet examples")
-		Console:WriteLine("")
+		Console.WriteLine("HashSet examples")
+		Console.WriteLine("")
 		
 		self:CheckExists()
 		return
@@ -24,11 +24,11 @@ class HashSetExamples
 		hashSetInt:Add(2)
 		hashSetInt:Add(4)
 		
-		Console:WriteLine(i"Hashset count = {hashSetInt:Count}")
+		Console.WriteLine(i"Hashset count = {hashSetInt:Count}")
 		
 		for var i := 1 upto 4
 			if !hashSetInt:Contains(i)
-				Console:WriteLine(i"HashSet doen't contains {I}")
+				Console.WriteLine(i"HashSet doen't contains {I}")
 			endif
 		next
 		

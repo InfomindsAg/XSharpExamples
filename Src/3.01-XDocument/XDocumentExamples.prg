@@ -42,8 +42,8 @@ class XDocumentExamples
         #region Initializing
     
         var xmlString := "<?xml version=""1.0"" encoding=""UTF-8""?><CedentePrestatore><Sede><Indirizzo>VIA ARMANDO PICA 170</Indirizzo><CAP>41126</CAP><Comune>MODENA</Comune><Provincia>MO</Provincia><Nazione>IT</Nazione></Sede><Contatti TestAttribute=""AttValue""><Telefono>059/2863111</Telefono><Fax>059/2863199</Fax><Email>FABIO.VINCENZI@NEULIFT.COM</Email></Contatti><Contatti><Telefono>073/1234345</Telefono><Fax>063/8431816</Fax><Email>samplemail@gmail.com</Email></Contatti></CedentePrestatore>"
-        var xDoc := XDocument:Parse(xmlString)
-        //var xDoc := XDocument:Load(xmlFile)
+        var xDoc := XDocument.Parse(xmlString)
+        //var xDoc := XDocument.Load(xmlFile)
         var rootElement := xDoc:Root //XElement
     
         #endregion
@@ -98,7 +98,7 @@ class XDocumentExamples
         */
     
         var xmlns := (XNamespace)"http://www.adventure-works.com"
-        var element := XElement:Parse("<ElementName xmlns:aw=""http://www.adventure-works.com""><aw:Descendant>1200</aw:Descendant><aw:Descendant>content</aw:Descendant><Descendant>3.0</Descendant></ElementName>")
+        var element := XElement.Parse("<ElementName xmlns:aw=""http://www.adventure-works.com""><aw:Descendant>1200</aw:Descendant><aw:Descendant>content</aw:Descendant><Descendant>3.0</Descendant></ElementName>")
         var awDescendants := element:Elements(xmlns + "Descendant"):Select({el => el:Value})
         //awDescendants looks like
         /*

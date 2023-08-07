@@ -14,8 +14,8 @@ class InterfaceExamples
 	private _Random := Random{} as Random 
 
 	method Execute() as void strict
-		Console:WriteLine("Interface examples")
-		Console:WriteLine("")
+		Console.WriteLine("Interface examples")
+		Console.WriteLine("")
 	
 		self:UseInterfaces()
 		return

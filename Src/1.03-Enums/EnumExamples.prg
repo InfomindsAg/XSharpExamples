@@ -22,8 +22,8 @@ class EnumExamples
 	end enum
 
 	method Execute() as void strict
-		Console:WriteLine("Enum Examples")
-		Console:WriteLine("")
+		Console.WriteLine("Enum Examples")
+		Console.WriteLine("")
 		self:UseAnswer()
 		return
 	
@@ -32,19 +32,19 @@ class EnumExamples
 		// This is a local method, only visible inide the UseAnswer method
 		local procedure WriteEnum(userAnswer as Answer) 
 			switch userAnswer
-			case Answer:yes
-				Console:WriteLine("Yes")
-			case Answer:No
-				Console:WriteLine("No")
-			case Answer:Maybe
-				Console:WriteLine("Maybe")
+			case Answer.yes
+				Console.WriteLine("Yes")
+			case Answer.No
+				Console.WriteLine("No")
+			case Answer.Maybe
+				Console.WriteLine("Maybe")
 			otherwise
-				Console:WriteLine("Something stange -> " + userAnswer:ToString())
+				Console.WriteLine("Something stange -> " + userAnswer.ToString())
 			end switch 
 		end procedure
 		
 		// Assign the Enum the using the Enum definition
-		var myAnswer := Answer:Yes
+		var myAnswer := Answer.Yes
 		WriteEnum(myAnswer)
 		
 		// Assign Enum using the integer value

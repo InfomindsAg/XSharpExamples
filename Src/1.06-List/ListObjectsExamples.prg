@@ -18,8 +18,8 @@ class ListObjectsExamples
 	#endregion 
 	
 	method Execute() as void strict
-		Console:WriteLine("List with Objects examples")
-		Console:WriteLine("")
+		Console.WriteLine("List with Objects examples")
+		Console.WriteLine("")
 		
 		self:ListWithObject()
 		self:ListWithListWithInt()
@@ -37,7 +37,7 @@ class ListObjectsExamples
 		// iterate trougth the list and output it's values
 		// WARNING! The first element of the List has the Index 0
 		for var i := 0 upto list:Count -1
-			console:WriteLine(i"{list[i]:FirstName} - {list[i]:LastName}")
+			Console.WriteLine(i"{list[i]:FirstName} - {list[i]:LastName}")
 		next
 		
 		// Add object Max Musterman again
@@ -50,13 +50,13 @@ class ListObjectsExamples
 		// iterate trougth the list using foreach 
 		foreach var item in list
 			// Interpolated syntax -> same as String.Format
-			console:WriteLine(i"{item:FirstName} - {item:LastName}")
+			Console.WriteLine(i"{item:FirstName} - {item:LastName}")
 		next
 		
 		// Search for first Object with name Pinco
 		var pinco := list:Find({ q => q:FirstName == "Pinco" })
 		if pinco != null
-			console:WriteLine(i"{pinco:FirstName} - {pinco:LastName}")
+			Console.WriteLine(i"{pinco:FirstName} - {pinco:LastName}")
 		endif
 		
 		return
@@ -69,9 +69,9 @@ class ListObjectsExamples
 		
 		foreach var innerList in list
 			foreach var item in innerList
-				Console:WriteLine(item)
+				Console.WriteLine(item)
 			next
-			Console:WriteLine("----")
+			Console.WriteLine("----")
 		next
 	
 end class

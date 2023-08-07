@@ -9,8 +9,8 @@ using system.Collections.Generic
 class IsAndVarExamples
 
 	method Execute() as void strict
-		Console:WriteLine("Is and Var examples")
-		Console:WriteLine("")
+		Console.WriteLine("Is and Var examples")
+		Console.WriteLine("")
 	
 		self:IsForSimpleTypes()
 		self:IsForObjects()

@@ -13,7 +13,6 @@
     <GenerateFullPaths>true</GenerateFullPaths>
     <Dialect>VO</Dialect>
     <OutputName>XSharpExamples</OutputName>
-    <XSharpProjectversion>2.12.2.0</XSharpProjectversion>
     <StartupObject />
     <EnforceSelf>True</EnforceSelf>
     <Unsafe>True</Unsafe>
@@ -100,6 +99,7 @@
     <Compile Include="5.01-ExamplesUnitTests\NextXMasBadExample.prg" />
     <Compile Include="5.01-ExamplesUnitTests\FizzBuzz.prg" />
     <Compile Include="5.02-ExamplesBenchmarks\ExampleForBenchmark.prg" />
+    <Compile Include="5.03-ExampleYield\ExampleYield.prg" />
     <Compile Include="Properties\AssemblyInfo.prg">
       <SubType>Code</SubType>
     </Compile>
@@ -126,6 +126,7 @@
     <Folder Include="4.02-ActionAndFunc" />
     <Folder Include="5.01-ExamplesUnitTests" />
     <Folder Include="5.02-ExamplesBenchmarks" />
+    <Folder Include="5.03-ExampleYield" />
     <Folder Include="Properties\" />
   </ItemGroup>
   <ItemGroup>

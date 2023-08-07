@@ -10,8 +10,8 @@ using system.Xml.Linq // needs references to System.XML and System.Xml.Linq in P
 class XDocumentExportExamples
 
 	method Execute() as void strict
-		Console:WriteLine("XML Export examples")
-		Console:WriteLine("")
+		Console.WriteLine("XML Export examples")
+		Console.WriteLine("")
 		
 		self:StaticXmlDoc()
 		self:ListXmlDoc()
@@ -32,7 +32,7 @@ class XDocumentExportExamples
 				XElement{"changelog", "dummy dummy"}}}
 		
 		// doc:Save("static.xml")
-		Console:WriteLine(doc:ToString())
+		Console.WriteLine(doc:ToString())
 		return
 
 
@@ -66,7 +66,7 @@ class XDocumentExportExamples
 		
 		var doc := XDocument{articles}
 		// doc:Save("list.xml")
-		Console:WriteLine(doc:ToString())
+		Console.WriteLine(doc:ToString())
 
 		return
 

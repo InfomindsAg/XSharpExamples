@@ -56,7 +56,13 @@ FUNCTION Start() AS VOID STRICT
 	// ExampleForBenchmark{}.OutputFinal()
 
     #endregion
+    
+    #region Examples for Wiki
+    
+    ExampleYield{}.Execute()
+    
+    #endregion
 
-	console:WriteLine("Press key to exit")
-	console:ReadKey()
+	Console.WriteLine("Press key to exit")
+	Console.ReadKey()
 	return

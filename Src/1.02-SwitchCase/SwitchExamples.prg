@@ -8,8 +8,8 @@ Documentation: https://www.xsharp.eu/help/command_switch.html
 class SwitchExamples
 	
 	method Execute() as void strict
-		Console:WriteLine("Swtich Examples")
-		Console:WriteLine("")
+		Console.WriteLine("Swtich Examples")
+		Console.WriteLine("")
 		self:SwitchWithString()
 		self:SwitchWithInt()
 		return
@@ -19,13 +19,13 @@ class SwitchExamples
 		var element := 1
 		switch element
 			case 1 
-				Console:WriteLine("It was 1")
+				Console.WriteLine("It was 1")
 			case 2
-				Console:WriteLine("It was 2")
+				Console.WriteLine("It was 2")
 			case 3
-				Console:WriteLine("It was 3")
+				Console.WriteLine("It was 3")
 			otherwise
-				Console:WriteLine("It was something else")
+				Console.WriteLine("It was something else")
 		end switch
 		return		
 	
@@ -35,11 +35,11 @@ class SwitchExamples
 		
 		switch element
 			case "DUMMY" 
-				Console:WriteLine("It was DUMMY")
+				Console.WriteLine("It was DUMMY")
 			case "Dummy"
-				Console:WriteLine("It was Dummy")
+				Console.WriteLine("It was Dummy")
 			otherwise
-				Console:WriteLine("It was something else")
+				Console.WriteLine("It was something else")
 		end switch
 		return
 
