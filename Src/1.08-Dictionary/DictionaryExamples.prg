@@ -11,8 +11,8 @@ using system.collections.generic
 class DictionaryExamples
 
 	method Execute() as void strict
-		Console:WriteLine("Dictionary examples")
-		Console:WriteLine("")
+		Console.WriteLine("Dictionary examples")
+		Console.WriteLine("")
 		
 		self:KeyValueSimple()
 		self:KeyValueObject()
@@ -34,17 +34,17 @@ class DictionaryExamples
 		
 		// Check if a value exists
 		if !dictionary:ContainsKey(5)
-			Console:WriteLine("Dictionary doesn't contain value 5")
+			Console.WriteLine("Dictionary doesn't contain value 5")
 		endif
 		
 		// Check if a value exists and get the value
 		if dictionary:ContainsKey(10)
-			Console:WriteLine(dictionary[10])
+			Console.WriteLine(dictionary[10])
 		endif
 		
 		// Alternative syntax
 		if dictionary:TryGetValue(10, out var textValue)
-			Console:WriteLine(textValue)
+			Console.WriteLine(textValue)
 		endif
 		
 		return
@@ -73,7 +73,7 @@ class DictionaryExamples
 		// Loop over the keys of the Dictionary
 		foreach var item in dictionary:Keys
 			var text := string.Join(", ", dictionary[item])
-			Console:WriteLine(i"{item} => {text}")
+			Console.WriteLine(i"{item} => {text}")
 		next
 		
 		return

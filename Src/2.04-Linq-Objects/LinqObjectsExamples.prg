@@ -10,8 +10,8 @@ using system.Linq
 class LinqObjectsExamples
 
 	method Execute() as void strict
-		Console:WriteLine("Linq with Objects")
-		Console:WriteLine("")
+		Console.WriteLine("Linq with Objects")
+		Console.WriteLine("")
 	
 		self:WhereSelectSum()
 		self:SelectMany()
@@ -19,7 +19,7 @@ class LinqObjectsExamples
 		return
 
 	method WhereSelectSum() as void strict
-		console:WriteLine("WhereSelectSum")
+		Console.WriteLine("WhereSelectSum")
 		
 		var list := InvoiceBuilder.Build(1)
 
@@ -36,14 +36,14 @@ class LinqObjectsExamples
 			
 		// q:Positions?: => execute sum only, is Positions is not null. Otherwise return null
 		foreach var item in result
-			console:WriteLine(i"{item:Year}/{item:Number} => {item:SumValue}  ({item:PosText})")
+			Console.WriteLine(i"{item:Year}/{item:Number} => {item:SumValue}  ({item:PosText})")
 		next
 
-		console:WriteLine()
+		Console.WriteLine()
 		return
 
 	method SelectMany() as void strict
-		console:WriteLine("selectMany")
+		Console.WriteLine("selectMany")
 		
 		var list := InvoiceBuilder.Build(1, 3)
 
@@ -51,14 +51,14 @@ class LinqObjectsExamples
 		var result := list:SelectMany({ p => p:Positions}, { q, p => class { q:Year, q:Number, p:Article, p:Quantity, p:Price, value := p:Quantity * p:Price }})
 
 		foreach var item in result
-			console:WriteLine(i"{item:Year}/{item:Number} => {item:Article} - {item:Quantity} {item:Price} => ({item:Value})")
+			Console.WriteLine(i"{item:Year}/{item:Number} => {item:Article} - {item:Quantity} {item:Price} => ({item:Value})")
 		next
 
-		console:WriteLine()
+		Console.WriteLine()
 		return
 
 	method OrderByThenBy() as void strict
-		console:WriteLine("OrderByThenBy")
+		Console.WriteLine("OrderByThenBy")
 		
 		var list := InvoiceBuilder.Build()
 
@@ -68,10 +68,10 @@ class LinqObjectsExamples
 						:ToList()
 						
 		foreach var item in result
-			console:WriteLine(i"{item:Year}/{item:Number}")
+			Console.WriteLine(i"{item:Year}/{item:Number}")
 		next
 
-		console:WriteLine()
+		Console.WriteLine()
 		return
 
 end class

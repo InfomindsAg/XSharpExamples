@@ -9,8 +9,8 @@ Documentation: https://docs.microsoft.com/en-us/dotnet/api/system.collections.ge
 class ListSimpleExamples
 
 	method Execute() as void strict
-		Console:WriteLine("Simple List examples")
-		Console:WriteLine("")
+		Console.WriteLine("Simple List examples")
+		Console.WriteLine("")
 		
 		self:ListWithIntegers()
 		self:ListWithDateTimes()
@@ -32,25 +32,25 @@ class ListSimpleExamples
 		// iterate trougth the list and output it's values
 		// WARNING! The first element of the List has the Index 0
 		for var i := 0 upto list:Count -1
-			console:WriteLine(list[i])
+			Console.WriteLine(list[i])
 		next
 		
 		// Remove the value 1
 		var success := list:Remove(1)
-		Console:WriteLine(string.Format("Success {0}, Count {1}", success, list:Count))
+		Console.WriteLine(string.Format("Success {0}, Count {1}", success, list:Count))
 
 		// Remove the element with the index 0
 		list:RemoveAt(0)
-		Console:WriteLine(string.Format("First Element {0}", list[0]))
+		Console.WriteLine(string.Format("First Element {0}", list[0]))
 		
 		// Insert a the value -1 before the first element
 		list:Insert(0, 99)
-		Console:WriteLine(string.Format("First Element {0}", list[0]))
+		Console.WriteLine(string.Format("First Element {0}", list[0]))
 
 		// Find an element in the List
 		var index := list:IndexOf(40)
 		if index > -1
-			Console:WriteLine(string.Format("Element 40 found at index {0}", index))
+			Console.WriteLine(string.Format("Element 40 found at index {0}", index))
 		endif
 
 		// Sort values
@@ -58,7 +58,7 @@ class ListSimpleExamples
 
 		// iterate trougth the list using foreach 
 		foreach var item in list
-			console:WriteLine(item)
+			Console.WriteLine(item)
 		next
 
 		return
@@ -78,31 +78,31 @@ class ListSimpleExamples
 		// iterate trougth the list and output it's values
 		// WARNING! The first element of the List has the Index 0
 		for var i := 0 upto list:Count -1
-			console:WriteLine(list[i])
+			Console.WriteLine(list[i])
 		next
 		
 		// Remove the value Today
 		var success := list:Remove(DateTime.Today)
-		Console:WriteLine(string.Format("Success {0}, Count {1}", success, list:Count))
+		Console.WriteLine(string.Format("Success {0}, Count {1}", success, list:Count))
 
 		// Remove the element with the index 0
 		list:RemoveAt(0)
-		Console:WriteLine(string.Format("First Element {0}", [0]))
+		Console.WriteLine(string.Format("First Element {0}", [0]))
 		
 		// Insert a the value Yesterday before the first element
 		list:Insert(0, DateTime.Today:AddDays(-1))
-		Console:WriteLine(string.Format("First Element {0}", list[0]))
+		Console.WriteLine(string.Format("First Element {0}", list[0]))
 
 		// Find an element in the List
 		var searchValue := DateTime.Today:AddDays(3)
 		var index := list:IndexOf(searchValue)
 		if index > -1
-			Console:WriteLine(string.Format("Element {0} found at index {1}", searchValue, index))
+			Console.WriteLine(string.Format("Element {0} found at index {1}", searchValue, index))
 		endif
 
 		// iterate trougth the list using foreach 
 		foreach var item in list
-			console:WriteLine(item)
+			Console.WriteLine(item)
 		next
 
 		return
@@ -114,7 +114,7 @@ class ListSimpleExamples
 
 		// Join al the elements in the List of String using the separator -|-
 		var joinedString := string.Join("-|-", list)
-		console:WriteLine(joinedString)
+		Console.WriteLine(joinedString)
 		
 		// Clear the list and add only one element
 		list:clear()
@@ -122,7 +122,7 @@ class ListSimpleExamples
 		
 		// Join al the elements in the List of String using the separator -|-
 		joinedString := string.Join("-|-", list)
-		console:WriteLine(joinedString)
+		Console.WriteLine(joinedString)
 
 		return
 

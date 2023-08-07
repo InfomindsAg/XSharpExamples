@@ -9,8 +9,8 @@ Documentation: https://docs.microsoft.com/en-us/dotnet/api/system.text.stringbui
 public class StringBuilderExamples
 
 	method Execute() as void strict
-		Console:WriteLine("Stringbuilder Examples")
-		Console:WriteLine("")
+		Console.WriteLine("Stringbuilder Examples")
+		Console.WriteLine("")
 		
 		self:ConcatenateNoLineBreaks()
 		self:ConcatenateWithLineBreaks()

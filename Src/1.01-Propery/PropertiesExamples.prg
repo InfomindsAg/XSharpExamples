@@ -80,19 +80,19 @@ class PropertiesExamples
 		// The usage of the new properties is compatible to the assign/access
 
 		self:OldProperty := 1
-		Console:WriteLine(self:OldProperty)
+		Console.WriteLine(self:OldProperty)
 		self:OldProperty := 15
-		Console:WriteLine(self:OldProperty)
+		Console.WriteLine(self:OldProperty)
 		
 		self:NewProperty := 1
-		Console:WriteLine(self:NewProperty)
+		Console.WriteLine(self:NewProperty)
 		self:NewProperty := 15
-		Console:WriteLine(self:NewProperty)
+		Console.WriteLine(self:NewProperty)
 		
 		self:AutoProperty := 1
-		Console:WriteLine(self:NewProperty)
+		Console.WriteLine(self:NewProperty)
 		self:AutoPropertyPrivateSet := 1
-		Console:WriteLine(self:NewProperty)
+		Console.WriteLine(self:NewProperty)
 
 		return
 	

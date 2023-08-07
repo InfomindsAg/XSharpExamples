@@ -10,8 +10,8 @@ using system.Linq
 class LinqSimpleExamples
 
 	method Execute() as void strict
-		Console:WriteLine("Linq with Simple Datatypes")
-		Console:WriteLine("")
+		Console.WriteLine("Linq with Simple Datatypes")
+		Console.WriteLine("")
 	
 		self:DeferredExecution()
 		self:Filter()
@@ -23,7 +23,7 @@ class LinqSimpleExamples
 		return
 
 	method DeferredExecution() as void strict
-		console:WriteLine("DeferredExecution")
+		Console.WriteLine("DeferredExecution")
 		
 		local function MyFilterFunction(value as int) as logic
 			Console.WriteLine(i"Filter {value}")
@@ -51,7 +51,7 @@ class LinqSimpleExamples
 
 
 	method Filter() as void strict
-		console:WriteLine("Filter")
+		Console.WriteLine("Filter")
 
 		var list := List<int>{} { 1, 2, 3, 4, 5}
 		var result := list:Where({q => q < 4})
@@ -61,7 +61,7 @@ class LinqSimpleExamples
 
 
 	method Sort() as void strict
-		console:WriteLine("Sort")
+		Console.WriteLine("Sort")
 
 		var list := List<int>{} { 3, 4, 5, 1, 2}
 		var result := list:OrderBy({q => q})
@@ -76,7 +76,7 @@ class LinqSimpleExamples
 
 
 	method Select() as void strict
-		console:WriteLine("Select")
+		Console.WriteLine("Select")
 
 		var list := List<int>{} { 1, 2, 3, 4}
 		var result := list:Select({q => String.Format("Person {0}", q)})
@@ -86,7 +86,7 @@ class LinqSimpleExamples
 		return
 
 	method To() as void strict
-		console:WriteLine("To...")
+		Console.WriteLine("To...")
 
 		var result := List<int>{} { 2, 1, 3 }:OrderBy({q => q})
 		var resultTwoValues := result:Select({q => class{ number := q, square := q * q }})
@@ -106,7 +106,7 @@ class LinqSimpleExamples
 
 
 	method AllAndAny() as void strict
-		console:WriteLine("All/Any")
+		Console.WriteLine("All/Any")
 		
 		var data := List<int>{} { 1, 2, 3, 4, 5 }
 
@@ -120,7 +120,7 @@ class LinqSimpleExamples
 		return
 
 	method FirstLast() as void strict
-		console:WriteLine("First/Last")
+		Console.WriteLine("First/Last")
 
 		var data := List<int>{} { 1, 2, 3, 4, 5 }
 
