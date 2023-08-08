@@ -60,3 +60,7 @@ Some of the examples use features from the X# version 2.8 (like local methods an
 ### Part 2 - Benchmarks
 
 * Use BenchmarkDotNet to perform Performance and Memory Benchmarks
+
+## 6th Session (Wiki)
+
+* Yield
