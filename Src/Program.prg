@@ -57,9 +57,9 @@ FUNCTION Start() AS VOID STRICT
 
     #endregion
     
-    #region Examples for Wiki
+    #region Examples for Wiki (6th block)
     
-    ExampleYield{}.Execute()
+    // ExampleYield{}.Execute()
     
     #endregion
 

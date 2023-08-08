@@ -99,7 +99,7 @@
     <Compile Include="5.01-ExamplesUnitTests\NextXMasBadExample.prg" />
     <Compile Include="5.01-ExamplesUnitTests\FizzBuzz.prg" />
     <Compile Include="5.02-ExamplesBenchmarks\ExampleForBenchmark.prg" />
-    <Compile Include="5.03-ExampleYield\ExampleYield.prg" />
+    <Compile Include="6.01-Yield\ExampleYield.prg" />
     <Compile Include="Properties\AssemblyInfo.prg">
       <SubType>Code</SubType>
     </Compile>
@@ -126,7 +126,7 @@
     <Folder Include="4.02-ActionAndFunc" />
     <Folder Include="5.01-ExamplesUnitTests" />
     <Folder Include="5.02-ExamplesBenchmarks" />
-    <Folder Include="5.03-ExampleYield" />
+    <Folder Include="6.01-Yield" />
     <Folder Include="Properties\" />
   </ItemGroup>
   <ItemGroup>
