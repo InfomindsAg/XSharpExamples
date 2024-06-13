@@ -24,10 +24,13 @@
     <Vo8>True</Vo8>
     <Vo2>True</Vo2>
     <Vo13>True</Vo13>
-    <Vo7>True</Vo7>
-    <Vo6>True</Vo6>
+    <Vo7>False</Vo7>
+    <Vo6>False</Vo6>
     <Vo14>True</Vo14>
     <LB>True</LB>
+    <NamedArgs>False</NamedArgs>
+    <EnforceOverride>True</EnforceOverride>
+    <NoStandardDefs>True</NoStandardDefs>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'" Label="Configuration">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -38,6 +41,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'" Label="Configuration">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -100,6 +104,7 @@
     <Compile Include="5.01-ExamplesUnitTests\FizzBuzz.prg" />
     <Compile Include="5.02-ExamplesBenchmarks\ExampleForBenchmark.prg" />
     <Compile Include="6.01-Yield\ExampleYield.prg" />
+    <Compile Include="7.01-Tuples\TuplesExamples.prg" />
     <Compile Include="Properties\AssemblyInfo.prg">
       <SubType>Code</SubType>
     </Compile>
@@ -127,6 +132,7 @@
     <Folder Include="5.01-ExamplesUnitTests" />
     <Folder Include="5.02-ExamplesBenchmarks" />
     <Folder Include="6.01-Yield" />
+    <Folder Include="7.01-Tuples" />
     <Folder Include="Properties\" />
   </ItemGroup>
   <ItemGroup>
