@@ -31,6 +31,7 @@
     <NamedArgs>False</NamedArgs>
     <EnforceOverride>True</EnforceOverride>
     <NoStandardDefs>True</NoStandardDefs>
+    <Vo15>False</Vo15>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'" Label="Configuration">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -67,6 +68,8 @@
     <Reference Include="XSharp.VO" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="0-Mocks\Defines.prg" />
+    <Compile Include="0-Mocks\MockFunctions.prg" />
     <Compile Include="1.07-HashSet\HashSetExamples.prg" />
     <Compile Include="1.08-Dictionary\DictionaryExamples.prg" />
     <Compile Include="1.01-Propery\PropertiesExamples.prg">
@@ -105,6 +108,7 @@
     <Compile Include="5.02-ExamplesBenchmarks\ExampleForBenchmark.prg" />
     <Compile Include="6.01-Yield\ExampleYield.prg" />
     <Compile Include="7.01-Tuples\TuplesExamples.prg" />
+    <Compile Include="DataTypes\String\InterpolatedStrings.prg" />
     <Compile Include="Properties\AssemblyInfo.prg">
       <SubType>Code</SubType>
     </Compile>
@@ -133,6 +137,9 @@
     <Folder Include="5.02-ExamplesBenchmarks" />
     <Folder Include="6.01-Yield" />
     <Folder Include="7.01-Tuples" />
+    <Folder Include="DataTypes" />
+    <Folder Include="0-Mocks" />
+    <Folder Include="DataTypes\String" />
     <Folder Include="Properties\" />
   </ItemGroup>
   <ItemGroup>
