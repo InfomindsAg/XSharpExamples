@@ -6,11 +6,11 @@ class InterpolatedStrings
    property Person as tuple(Name as string, Surname as string, Age as int, Profession as string) auto := tuple{"John", "Lennon", 40, "musician"}
 
    method Execute() as void
-//       self.Readability()
-//       self.NewLines()
-//       self.KeepItSimple()
-//       self.FormatYourNumbers()
-//       self.FormatYourDates()
+      self.Readability()
+      self.NewLines()
+      self.KeepItSimple()
+      self.FormatYourNumbers()
+      self.FormatYourDates()
       self.InterpolationOrAlternative()
       return
 

@@ -6,6 +6,8 @@ using System.Text
 
 function Start() as void strict
 
+   // Uncomment the example you want to run
+
 	// PropertiesExamples{}:Execute()
 	// SwitchExamples{}:Execute()
 	// EnumExamples{}:Execute()
@@ -27,7 +29,7 @@ function Start() as void strict
 	// ExampleForBenchmark{}.OutputFinal()
    // ExampleYield{}.Execute()
    // TuplesExamples{}.Execute()
-   InterpolatedStrings{}.Execute()
+   // InterpolatedStrings{}.Execute()
 
 	Console.WriteLine(e"\r\nPress key to exit")
 	Console.ReadKey()
