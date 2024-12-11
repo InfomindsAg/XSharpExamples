@@ -27,6 +27,7 @@ function Start() as void strict
 	// ExampleForBenchmark{}.OutputFinal()
    // ExampleYield{}.Execute()
    // TuplesExamples{}.Execute()
+   InterpolatedStrings{}.Execute()
 
 	Console.WriteLine(e"\r\nPress key to exit")
 	Console.ReadKey()

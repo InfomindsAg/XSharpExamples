@@ -32,6 +32,8 @@
     <OutputName>XSharpExamples.Tests</OutputName>
     <XSharpProjectversion>2.12.2.0</XSharpProjectversion>
     <StartupObject />
+    <NamedArgs>false</NamedArgs>
+    <Allowdot>false</Allowdot>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'" Label="Configuration">
     <PlatformTarget>AnyCPU</PlatformTarget>
